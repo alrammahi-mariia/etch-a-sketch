@@ -11,14 +11,18 @@ body {
     border: 1px solid black;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
 
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
 }
 
 .cell {
     border: 1px solid black;
-    min-width: 10px;
-    min-height: 10px;
-    flex-grow: 0;
-    flex-shrink: 1;
+    flex: 1;
 
 }
