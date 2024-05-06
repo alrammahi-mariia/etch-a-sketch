@@ -12,15 +12,18 @@ function createGrid(num) {
             cell.setAttribute("class", "cell");
             cell.id = j;
             row.appendChild(cell);
+
+            cell.addEventListener("mouseover", () => {
+                cell.setAttribute("style", "background-color: black")
+            })
     
         }
        
     }
 
-
 }
 
-createGrid(39);
+createGrid(65);
 
 
 

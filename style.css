@@ -6,8 +6,8 @@ body {
 
 #container {
     margin: 30px auto;
-    width: 600px;
-    height: 600px;
+    width: 960px;
+    height: 800px;
     border: 1px solid black;
     display: flex;
     flex-wrap: wrap;
@@ -25,4 +25,8 @@ body {
     border: 1px solid black;
     flex: 1;
 
+}
+
+.active {
+    background-color: black;
 }
