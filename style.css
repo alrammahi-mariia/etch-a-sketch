@@ -2,13 +2,19 @@ body {
     margin: 0;
     box-sizing: border-box;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(51,51,51);
 }
 
 #container {
     margin: 30px auto;
-    width: 960px;
-    height: 800px;
-    border: 1px solid black;
+    width: 600px;
+    height: 600px;
+    border: 1px solid rgb(222, 220, 220);
+    background-color: rgb(30,30,30);
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -22,17 +28,23 @@ body {
 }
 
 .cell {
-    border: 1px solid black;
+    border: 1px solid rgb(129,129,129);
     flex: 1;
-
 }
 
-.active {
-    background-color: black;
+.button-container {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    gap: 30px;
 }
+
 
 button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: rgb(37,37,38);
+    padding: 10px;
+    width: 100px;
+    border: 1px solid rgb(222, 220, 220);
+    color: rgb(225, 220, 220);
+    border-radius: 10px;
 }
