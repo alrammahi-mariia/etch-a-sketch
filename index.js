@@ -23,8 +23,14 @@ function createGrid(num) {
 
 }
 
-createGrid(65);
-
+const btn = document.querySelector("button");
+btn.addEventListener("click", () => { 
+    let sqr = parseInt(prompt("Please enter the number of cells"));
+    console.log(sqr);
+    if (sqr != null){
+        createGrid(sqr);
+    }
+})
 
 
 

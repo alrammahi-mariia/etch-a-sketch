@@ -30,3 +30,9 @@ body {
 .active {
     background-color: black;
 }
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
