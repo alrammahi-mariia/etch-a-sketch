@@ -1,5 +1,6 @@
+const grid = document.querySelector("div#container");
+
 function createGrid(num) {
-    const grid = document.querySelector("div#container");
 
     for (i = 1; i <= num; i++){
         const row = document.createElement("div");
@@ -14,7 +15,8 @@ function createGrid(num) {
             row.appendChild(cell);
 
             cell.addEventListener("mouseover", () => {
-                cell.setAttribute("style", "background-color: black")
+                let randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16); 
+                cell.style.backgroundColor = randomColor;
             })
     
         }
@@ -23,14 +25,17 @@ function createGrid(num) {
 
 }
 
-const btn = document.querySelector("button");
-btn.addEventListener("click", () => { 
+const setBtn = document.querySelector(".set-btn");
+setBtn.addEventListener("click", () => { 
     let sqr = parseInt(prompt("Please enter the number of cells"));
-    console.log(sqr);
     if (sqr != null){
         createGrid(sqr);
     }
 })
 
+const resetBtn = document.querySelector(".reset-btn");
+resetBtn.addEventListener("click", () => { 
+    location.reload();
+})
 
 
