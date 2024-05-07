@@ -28,9 +28,10 @@ function createGrid(num) {
 const setBtn = document.querySelector(".set-btn");
 setBtn.addEventListener("click", () => { 
     let sqr = parseInt(prompt("Please enter the number of cells"));
-    if (sqr != null){
+    if (sqr != null && sqr <= 100){
         createGrid(sqr);
     }
+    else alert("Please enter a number less than or equal to 100")
 })
 
 const resetBtn = document.querySelector(".reset-btn");
